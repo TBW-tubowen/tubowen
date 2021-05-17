@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>鼠标修饰符</h1>
+        <!-- left: 只有鼠标左键点击才起作用 -->
+        <button @click.left="son">btn-1</button>
+        <!-- middle: 滚轮 -->
+        <button @click.middle="son">btn-2</button>
+        <!-- right: 右键 -->
+        <button @click.right="son">btn-3</button>
+        <h1>系统键修饰符</h1>
+        <!-- ctrl、shift、alt、帮助键(window：窗口，mac: command) -->
+        <button @click.ctrl="son">ctrl</button>
+        <button @click.shift="son">shift</button>
+        <button @click.alt="son">alt</button>
+        <button @click.meta="son">meta</button>
+        <h1>键盘事件修饰符</h1>
+        <label>esc<input type="text" @keydown.esc="keydown"></label>
+        <label>alt<input type="text" @keydown.alt="keydown"></label>
+        <label>a<input type="text" @keydown.a="keydown"></label>
+        <label>+<input type="text" @keydown.+="keydown"></label>
+        <label>?<input type="text" @keydown.?="keydown"></label>
+        <label>delete<input type="text" @keydown.delete="keydown"></label>
+    </div>
+    <script src="./dist/03.js"></script>
+</body>
+</html>
