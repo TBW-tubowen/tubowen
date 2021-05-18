@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="msg">
+        <h1>{{msg}}</h1>
+        <hr>
+        <!-- 固定的 -->
+        <!-- <child name="123" msg="msg" parent-msg="parent">1231351</child> -->
+        <!-- 动态的 -->
+        <child :name="123" :msg="msg" parent-msg="parent">1231351</child>
+    </div>
+    <script src="./dist/09.js"></script>
+</body>
+</html>

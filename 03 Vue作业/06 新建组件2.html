@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="msg">
+        <h1>{{msg}}</h1>
+        <hr>
+        <!-- 自定义组件 -->
+        <!-- html中使用组件 -->
+        <sy102></sy102>
+    </div>
+    <!-- 不要使用元素标签，默认渲染 -->
+    <!-- <div id="tpl">
+        <div>
+            <h1>子组件： {{title}}</h1>
+            <h2>子组件： {{name}}</h2>
+        </div>
+    </div> -->
+    <!-- 使用script模板 -->
+    <!-- <script type="text/template">
+        <div>
+            <h1>子组件： {{title}}</h1>
+            <h2>子组件： {{name}}</h2>
+        </div>
+    </script> -->
+    <!-- 建议使用template -->
+    <template id="tpl">
+        <div>
+            <h1>子组件： {{title}}</h1>
+            <h2>子组件： {{name}}</h2>
+        </div>
+        
+    </template>
+    <script src="./dist/06.js"></script>
+</body>
+</html>
