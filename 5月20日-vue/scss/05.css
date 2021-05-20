@@ -1,0 +1,27 @@
+.a,
+.b,
+.c {
+  height: 500px;
+}
+
+.a {
+  background-image: linear-gradient(#19db9b, #ebca13);
+}
+
+.b {
+  background-image: linear-gradient(#1408bd, #eb5713);
+}
+
+.c {
+  background-image: linear-gradient(#79071a, #b1eb13);
+}
+
+.bm-enter,
+.bm-leave-to {
+  opacity: 0;
+}
+
+.bm-enter-active,
+.bm-leave-active {
+  transition: all 2s;
+}

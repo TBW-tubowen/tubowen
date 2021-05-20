@@ -1,0 +1,26 @@
+.a,
+.b {
+    height: 500px;
+}
+.a {
+    background-image: linear-gradient(rgb(25, 219, 155), rgb(235, 202, 19));
+}
+.b {
+    background-image: linear-gradient(rgb(20, 8, 189), rgb(235, 87, 19));
+}
+
+.link {
+    width: 300px;
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    a {
+        width: 60px;
+        height: 50px;
+        border: 1px solid #000;
+        background-color: #fff;
+        text-align: center;
+        line-height: 50px;
+    }
+}
